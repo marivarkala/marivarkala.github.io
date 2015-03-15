@@ -14,7 +14,7 @@
 .content-box {
     padding: 20px;
     margin-bottom: 20px;
-    height: 700px;
+    height: 850px;
     overflow-y: auto;
 }
 
@@ -25,15 +25,6 @@
     font-size: 1.5em;
 }
 
-.side-image {
-    position:absolute;
-    left: 0;
-    right: 0;
-    margin-left:auto;
-    margin-right:auto;
-    padding: 0;
-}
-
 .main-image {
     position:absolute;
     left:0;
@@ -41,6 +32,7 @@
     margin-left:auto;
     margin-right:auto;
     padding: 0;
+    height: 850px;
 }
 
 /* framework styles */
