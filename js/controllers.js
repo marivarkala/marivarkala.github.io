@@ -23,7 +23,7 @@ angular.module('myApp.controllers', [])
 
         $scope.postComment = function(){
 
-            $http.post("/api/comment", {user_name: $scope.user_name, content: $scope.content})
+            $http.post("/api/comment", {user_name: $scope.user_name, content: $scope.content});
         };
     }])
     .controller('GalleryCtrl', ['$scope', 'Lightbox', function($scope, Lightbox) {
