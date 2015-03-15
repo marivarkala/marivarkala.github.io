@@ -1,0 +1,323 @@
+/* app css stylesheet */
+
+@import url(http://fonts.googleapis.com/css?family=Fredericka+the+Great);
+
+.titulo {
+    text-align: center;
+}
+
+.img-thumbnail {
+    width: 200px;
+    height: 200px;
+}
+
+.content-box {
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 700px;
+    overflow-y: auto;
+}
+
+.row { max-width: 100%; }
+.row h1 { color: white; }
+.row p {
+    color: white;
+    font-size: 1.5em;
+}
+
+.side-image {
+    position:absolute;
+    left: 0;
+    right: 0;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 0;
+}
+
+.main-image {
+    position:absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 0;
+}
+
+/* framework styles */
+.menu {
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
+}
+
+.menu:before {
+    content: "[";
+}
+
+.menu:after {
+    content: "]";
+}
+
+.menu > li {
+    display: inline;
+}
+
+.menu > li:before {
+    content: "|";
+    padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+    content: "";
+    padding: 0;
+}
+
+/* Angular UI Bootstrap fix */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+/* Angular marketing theme custom css */
+body {
+    background: url('../img/fundo.png') no-repeat center center fixed;
+    padding-top: 80px;
+    color:  #6a452a;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.frederika {
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.footer {
+    padding-bottom: 15px;
+    border-top: 1px solid #eee;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    height: 800px; 
+    overflow-y: scroll; 
+    margin-right: 25px;
+}
+
+.jumbotron .btn {
+    padding: 14px 24px;
+    font-size: 21px;
+}
+
+/* Customize the nav-justified links to be fill the entire space of the .navbar */
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 50px;
+    height: 50px;
+    padding-top: 0;
+    font-size: 2em;
+}
+
+.navbar .nav > li > a,
+.navbar .nav > li.current-menu-item > a,
+.navbar .nav > li.current-menu-ancestor > a {
+    color: #986d4d;
+}
+
+.navbar .nav > li.active > a {
+    color:  #1d0f02;
+}
+
+/* Adjust Menu colors - Hover */
+.navbar .nav > li > a:hover {
+    color:          white;
+    text-shadow:    none;
+}
+
+.nav-justified {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.nav-justified > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #777;
+    text-align: center;
+    background-color: #e5e5e5; /* Old browsers */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e5e5e5));
+    background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
+    background-image:      -o-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(0%, #f5f5f5), to(#e5e5e5));
+    background-image:         linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+    background-repeat: repeat-x; /* Repeat the gradient */
+    border-bottom: 1px solid #d5d5d5;
+}
+.nav-justified > .active > a,
+.nav-justified > .active > a:hover,
+.nav-justified > .active > a:focus {
+    background-color: #ddd;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
+    box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
+}
+.nav-justified > li:first-child > a {
+    border-radius: 5px 5px 0 0;
+}
+.nav-justified > li:last-child > a {
+    border-bottom: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+/* ANIMATIONS
+============================================================================= */
+.page-home {
+    bottom:0;
+    top: 0;
+    padding-top: 100px;
+    position: absolute; 
+    text-align: center;
+    width:95%; 
+}
+
+.ng-enter       { z-index: 8888; }
+.ng-leave       { z-index: 9999; }
+
+.page-home.ng-leave        {
+    -webkit-animation: slideOutLeft 0.5s both ease-in;
+    -moz-animation: slideOutLeft 0.5s both ease-in;
+    animation: slideOutLeft 0.5s both ease-in;   
+}
+.page-home.ng-enter 		{  
+    -webkit-animation: slideInRight 0.5s both ease-in;
+    -moz-animation: slideInRight 0.5s both ease-in;
+    animation: slideInRight 0.5s both ease-in;    
+}
+
+/* slide in from the right */
+@keyframes slideInRight {
+    from 	{ transform: translateX(100%); }
+    to 		{ transform: translateX(0); }
+}
+@-moz-keyframes slideInRight {
+    from 	{ -moz-transform: translateX(100%); }
+    to 		{ -moz-transform: translateX(0); }
+}
+@-webkit-keyframes slideInRight {
+    from 	{ -webkit-transform: translateX(100%); }
+    to 		{ -webkit-transform: translateX(0); }
+}
+
+/* slide out from the left */
+@keyframes slideOutLeft {
+    to 		{ transform: translateX(-100%); }
+}
+@-moz-keyframes slideOutLeft {	
+    to 		{ -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes slideOutLeft {
+    to 		{ -webkit-transform: translateX(-100%); }
+}
+
+@media (min-width: 768px) {
+
+    .navbar-brand,
+    .navbar-nav li a {
+	line-height: 100px;
+	height: 100px;
+	padding-top: 0;
+	font-size: 2em;
+    }
+
+    .nav-justified {
+	max-height: 52px;
+    }
+    .nav-justified > li > a {
+	border-right: 1px solid #d5d5d5;
+	border-left: 1px solid #fff;
+    }
+    .nav-justified > li:first-child > a {
+	border-left: 0;
+	border-radius: 5px 0 0 5px;
+    }
+    .nav-justified > li:last-child > a {
+	border-right: 0;
+	border-radius: 0 5px 5px 0;
+    }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+
+    /* Remove the padding we set earlier */
+    .masthead,
+    .marketing,
+    .footer {
+	padding-right: 0;
+	padding-left: 0;
+    }
+}
+
+ul.rig {
+    list-style: none;
+    font-size: 0px;
+    margin-left: -2.5%; /* should match li left margin */
+}
+ul.rig li {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 0 2.5% 2.5%;
+    background: #fff;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    font-size: 1rem;
+    vertical-align: top;
+    box-shadow: 0 0 5px #ddd;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+ul.rig li img {
+    max-width: 100%;
+    height: 150px;
+    margin: 0 0 10px;
+}
+ul.rig li h3 {
+    margin: 0 0 5px;
+}
+ul.rig li p {
+    font-size: .9em;
+    line-height: 1.5em;
+    color: #999;
+}
+/* class for 2 columns */
+ul.rig.columns-2 li {
+    width: 47.5%; /* this value + 2.5 should = 50% */
+}
+/* class for 3 columns */
+ul.rig.columns-3 li {
+    width: 30.83%; /* this value + 2.5 should = 33% */
+}
+/* class for 4 columns */
+ul.rig.columns-4 li {
+    width: 22.5%; /* this value + 2.5 should = 25% */
+}
+
+@media (max-width: 480px) {
+    ul.grid-nav li {
+	display: block;
+	margin: 0 0 5px;
+    }
+    ul.grid-nav li a {
+	display: block;
+    }
+    ul.rig {
+	margin-left: 0;
+    }
+    ul.rig li {
+	width: 100% !important; /* over-ride all li styles */
+	margin: 0 0 20px;
+    }
+}
