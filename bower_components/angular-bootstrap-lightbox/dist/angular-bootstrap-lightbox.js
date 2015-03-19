@@ -7,7 +7,7 @@ angular.module('bootstrapLightbox').run(['$templateCache', function($templateCac
   'use strict';
 
   $templateCache.put('lightbox.html',
-    "<div class=modal-body ng-swipe-left=Lightbox.nextImage() ng-swipe-right=Lightbox.prevImage()><div class=lightbox-nav><button class=close aria-hidden=true ng-click=$dismiss()>×</button><div class=btn-group><a class=\"btn btn-xs btn-default\" ng-click=Lightbox.prevImage()>‹ Previous</a> <a ng-href={{Lightbox.imageUrl}} target=_blank class=\"btn btn-xs btn-default\" title=\"Open in new tab\">Open image in new tab</a> <a class=\"btn btn-xs btn-default\" ng-click=Lightbox.nextImage()>Next ›</a></div></div><div class=lightbox-image-container><div class=lightbox-image-caption><span>{{Lightbox.imageCaption}}</span></div><img lightbox-src={{Lightbox.imageUrl}} alt=\"\"></div></div>"
+    "<div class=\"modal-body\"     ng-swipe-left=\"Lightbox.nextImage()\"     ng-swipe-right=\"Lightbox.prevImage()\">  <!-- navigation -->  <div class=\"lightbox-nav\">    <!-- close button -->    <button class=\"close\" aria-hidden=\"true\" ng-click=\"$dismiss()\">×</button>    <div class=\"btn-group\">      <a class=\"btn btn-xs btn-default\" ng-click=\"Lightbox.prevImage()\">	‹ Anterior      </a>      <a class=\"btn btn-xs btn-default\" ng-click=\"Lightbox.nextImage()\">	Próxima ›      </a>    </div>  </div>  <div class=\"lightbox-image-container\">    <img lightbox-src=\"{{Lightbox.imageUrl}}\" alt=\"\">  </div></div>"
   );
 
 }]);

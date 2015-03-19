@@ -1,16 +1,16 @@
 <div class="row">
-	<div class="col-md-6">
-		<div class="content-box" sytle="max-height: 850px">
-			<ul class="rig columns-4" ng-controller="GalleryCtrl">
-				<li ng-repeat="image in images" style="margin: 10px">
-					<a ng-click="openLightboxModal($index)">
-						<img ng-src="{{ image.url }}" class="img-thumbnail" alt="">
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="col-md-6">
-		<img src="img/detalhe5.png" class="main-image" />
-	</div>
+  <div class="col-md-6">
+    <div class="content-box" sytle="max-height: 850px">
+      <ul class="rig columns-4" ng-controller="GalleryCtrl">
+	<li ng-repeat="image in images" style="margin: 10px">
+	  <a ng-click="openLightboxModal($index)">
+	    <img ng-src="{{ image.url }}"  alt="" />
+	  </a>
+	</li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <img src="img/detalhe5.png" class="main-image" />
+  </div>
 </div>

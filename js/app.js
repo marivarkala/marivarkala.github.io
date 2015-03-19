@@ -6,10 +6,11 @@ angular.module('myApp', [
     'ngAnimate',
     'bootstrapLightbox',
     'ui.bootstrap',
+    'ui.bootstrap.collapse',
     'myApp.controllers'
 ])
     .config(['$routeProvider', function($routeProvider) {
-
+	
         $routeProvider
             .when('/', {templateUrl: 'partials/home.html'})
             .when('/aboutcouple', {templateUrl: 'partials/aboutcouple.html'})
