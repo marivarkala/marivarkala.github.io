@@ -327,6 +327,10 @@ ul.rig.columns-4 li {
 
 @media (max-width: 480px) {
 
+    .main-image {
+	position: relative;
+	display: none;
+    }
     
     ul.grid-nav li {
 	display: block;
