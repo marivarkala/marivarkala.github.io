@@ -209,7 +209,8 @@ body {
     }
     
     .main-image {
-	height: 600px;
+	position: relative;
+	max-height: 600px;
     }
 
     .content-box {
@@ -223,7 +224,7 @@ body {
     .page-home {
 	padding-top: 50px;
     }
-    
+
     .navbar-brand,
     .navbar-nav li a {
 	line-height: 50px;
@@ -276,6 +277,8 @@ body {
     }
 }
 
+
+
 /* Image grid */
 ul.rig {
     list-style: none;
@@ -323,6 +326,8 @@ ul.rig.columns-4 li {
 }
 
 @media (max-width: 480px) {
+
+    
     ul.grid-nav li {
 	display: block;
 	margin: 0 0 5px;
