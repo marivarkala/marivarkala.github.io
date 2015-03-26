@@ -47,20 +47,18 @@
 html {
     height: 100%;
     width: 100%;
-    height: 100%;  
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 0; 
-    background: url('../img/fundo.png') no-repeat center center;
+    min-heigth: 100%;
+    background: url('../img/fundo.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-color: #9B6540;
 }
+
 body {
     color:  #6a452a;
+    min-heigth: 100%;
 }
 
 .frederika {
