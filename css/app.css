@@ -44,7 +44,15 @@
 /* Angular UI Bootstrap fix */
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
+html{
+    height:100%;
+    min-height:100%;
+}
+
 body {
+
+    min-height:100%;
+
     color:  #6a452a;
     background: url('../img/fundo.png') no-repeat;
     -webkit-background-size: 100%; 
