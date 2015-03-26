@@ -163,6 +163,16 @@ body {
     to 		{ -webkit-transform: translateX(-100%); }
 }
 
+/* Override Bootstrap Responsive CSS fixed navbar */
+@media (max-width: 979px) {
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+      position: fixed;
+      margin-left: 0px;
+      margin-right: 0px;
+  }
+}
+
 @media screen and (min-width: 1150px) and (max-width: 1400px) {
 
     .google-form {
