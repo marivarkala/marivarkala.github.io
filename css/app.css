@@ -46,7 +46,7 @@
 
 body {
     color:  #6a452a;
-    background: url('../img/fundo.png') no-repeat center center fixed;
+    background: url('../img/fundo.png') no-repeat;
     -webkit-background-size: 100%; 
     -moz-background-size: 100%; 
     -o-background-size: 100%; 
@@ -54,7 +54,10 @@ body {
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
-    background-size: cover; 
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #9B6540;
+    background-position: center center;
 }
 
 .frederika {
@@ -350,16 +353,24 @@ ul.rig.columns-4 li {
     width: 22.5%; /* this value + 2.5 should = 25% */
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
     .about_img {
 	width: 150px;
 	height: 150px;
     }
+
+    .title-image {
+	position: relative;
+	display: block;
+	max-width:480px;
+	max-height:470px;
+	width: auto;
+	height: auto;
+
+    }
     
     .main-image {
-	position: relative;
-	max-width: 480px;
 	display: none;
     }
     
