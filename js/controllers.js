@@ -34,7 +34,7 @@ angular.module('myApp.controllers', [])
 
 	var i = 0;
 	
-	for (i = 0; i < 139; i++) {
+	for (i = 0; i < 129; i++) {
 
 	    var number;
 	    
