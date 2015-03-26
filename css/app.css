@@ -45,12 +45,16 @@
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
 body {
-    background: url('../img/fundo.png') no-repeat center center fixed;
     color:  #6a452a;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url('../img/fundo.png') no-repeat center center fixed;
+    -webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover; 
 }
 
 .frederika {
@@ -66,7 +70,6 @@ body {
     margin-top: 120px;
 }
 
-
 .frase-titulo {
     font-size: 2em;
 }
@@ -74,6 +77,11 @@ body {
 .google-form {
     width: 100%;
     height: 100%;
+}
+
+.about_img {
+    width: 200px;
+    height: 200px;
 }
 
 /* Customize the nav-justified links to be fill the entire space of the .navbar */
@@ -344,8 +352,14 @@ ul.rig.columns-4 li {
 
 @media (max-width: 480px) {
 
+    .about_img {
+	width: 150px;
+	height: 150px;
+    }
+    
     .main-image {
 	position: relative;
+	max-width: 480px;
 	display: none;
     }
     

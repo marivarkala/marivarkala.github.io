@@ -20,10 +20,10 @@
     <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
   </head>
   <body ng-app="myApp">
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background: #1d0f02;">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background: #1d0f02;" ng-controller="MenuCtrl">
       <div class="container-fluid">
 	<div class="navbar-header">
-	  <button class="navbar-toggle collapsed" ng-init="isCollapsed = true" ng-click="isCollapsed = !isCollapsed" type="button">
+	  <button class="navbar-toggle"  ng-click="isCollapsed = !isCollapsed" type="button">
 	    <span class="sr-only"></span>
 	    <span class="icon-bar"></span>
 	    <span class="icon-bar"></span>
@@ -31,14 +31,14 @@
 	  </button>
 	  <a class="navbar-brand" href="#/" style="color: #986d4d;">Mari e Victor</a>
 	</div>
-	<div class="navbar-collapse" ng-class="{collapse: isCollapsed}" ng-controller="MenuCtrl">
+	<div class="navbar-collapse" collapse="isCollapsed">
 	  <ul class="nav navbar-nav">
-	    <li ng-class="{ active: isActive('/') }"><a href="#/">Inicio</a></li>
-	    <li ng-class="{ active: isActive('/aboutcouple') }"><a href="#/aboutcouple">Sobre o Casal</a></li>
-	    <li ng-class="{ active: isActive('/gallery') }"><a href="#/gallery">Galeria</a></li>
-	    <li ng-class="{ active: isActive('/aboutceremony') }"><a href="#/aboutceremony">A Cerimônia</a></li>
-	    <li ng-class="{ active: isActive('/giftlist') }"><a href="#/giftlist">Lista de Presentes</a></li>
-	    <li ng-class="{ active: isActive('/presence') }"><a href="#/presence">Confirme sua Presença</a></li>
+	    <li ng-class="{ active: isActive('/') }" ><a ng-click="isCollapsed = !isCollapsed" href="#/">Inicio</a></li>
+	    <li ng-class="{ active: isActive('/aboutcouple') }"><a ng-click="isCollapsed = !isCollapsed" href="#/aboutcouple">Sobre o Casal</a></li>
+	    <li ng-class="{ active: isActive('/gallery') }"><a ng-click="isCollapsed = !isCollapsed" href="#/gallery">Galeria</a></li>
+	    <li ng-class="{ active: isActive('/aboutceremony') }"><a ng-click="isCollapsed = true" href="#/aboutceremony">A Cerimônia</a></li>
+	    <li ng-class="{ active: isActive('/giftlist') }"><a ng-click="isCollapsed = true" href="#/giftlist">Lista de Presentes</a></li>
+	    <li ng-class="{ active: isActive('/presence') }"><a ng-click="isCollapsed = true" href="#/presence">Confirme sua Presença</a></li>
 	  </ul>
 	</div>
       </div>

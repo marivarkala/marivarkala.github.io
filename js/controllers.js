@@ -9,6 +9,8 @@ angular.module('myApp.controllers', [])
         $scope.isActive = function(viewLocation) {
             return viewLocation == $location.path();
         };
+
+	$scope.isCollapsed = true;
     }])
 
     .controller('PresenceCtrl', ['$scope', function($scope) {}])
